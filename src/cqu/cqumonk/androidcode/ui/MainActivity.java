@@ -9,15 +9,20 @@ import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.view.Window;
 import android.widget.Button;
 import android.widget.Toast;
 
 public class MainActivity extends Activity {
 
+	//页面间参数传递按钮
 	private Button mBtn_PassParams;
+	//类似QQ菜单侧边栏按钮
+	private Button mBtn_QQslideMenu;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
+		requestWindowFeature(Window.FEATURE_NO_TITLE);
 		setContentView(R.layout.activity_main);
 		initView();
 	}
@@ -26,7 +31,7 @@ public class MainActivity extends Activity {
 	 * 初始化并配置view
 	 */
 	private void initView() {
-		//实现页面跳转
+		//页面参数传递页面跳转
 		mBtn_PassParams=(Button) findViewById(R.id.btn_passParams);
 		mBtn_PassParams.setOnClickListener(new View.OnClickListener() {
 			
@@ -41,6 +46,16 @@ public class MainActivity extends Activity {
 				intent.putExtra("bundle", bundle);
 				
 				startActivityForResult(intent, 1);
+			}
+		});
+		//QQ侧边栏菜单页面跳转
+		mBtn_QQslideMenu=(Button) findViewById(R.id.btn_QQslideMenu);
+		mBtn_QQslideMenu.setOnClickListener(new View.OnClickListener() {
+			
+			@Override
+			public void onClick(View v) {
+				Intent intent=new Intent(MainActivity.this,QQslide_menu.class);
+				startActivity(intent);
 			}
 		});
 

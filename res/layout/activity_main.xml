@@ -2,7 +2,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="horizontal" >
+    android:orientation="vertical" >
 
     <Button
         android:id="@+id/btn_passParams"
@@ -10,6 +10,12 @@
         android:layout_height="wrap_content"
         android:background="@drawable/word_button_icon"
         android:text="页面间回传数据" />
+    <Button
+        android:id="@+id/btn_QQslideMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/word_button_icon"
+        android:text="类似QQ侧边栏菜单" />
 
 
 </GridLayout>
