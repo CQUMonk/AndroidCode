@@ -202,6 +202,7 @@ public class SlidingMenu extends HorizontalScrollView {
 		// 这里的l是scrollX，即屏幕左侧未显示的宽度，初始为mMenuWidth，手指向右滑动X像素，则为mMenuWidth-X
 		super.onScrollChanged(l, t, oldl, oldt);
 		
+		
 		//左侧菜单
 		if(l<mLeftMenuWidth){
 			float leftScale=1.0f*l/mLeftMenuWidth;
@@ -237,6 +238,7 @@ public class SlidingMenu extends HorizontalScrollView {
 			ViewHelper.setAlpha(mLeftMenu, leftMenuAlpha);
 			
 		}else {
+			
 			//此时，l的范围是mLeftMenuWidth~mLeftMenuWidth+mRightMenuWith
 			float rightScale=1.0f*(l-mLeftMenuWidth)/mRightMenuWith;
 			/**

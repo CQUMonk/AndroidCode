@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cqumonk="http://schemas.android.com/apk/res/cqu.cqumonk.androidcode"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/id_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+    </android.support.v4.view.ViewPager>
+
+   <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/tab_bg"
+        android:orientation="horizontal" >
+        <cqu.cqumonk.androidcode.view.ChangeColorIcon
+            android:id="@+id/id_indicator_one"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            cqumonk:icon="@drawable/ic_menu_start_conversation"
+            cqumonk:color="@color/olive" 
+            cqumonk:text="@string/weixin"
+            cqumonk:text_size="12sp"
+            android:padding="5dp"/>
+        <cqu.cqumonk.androidcode.view.ChangeColorIcon
+            android:id="@+id/id_indicator_two"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            cqumonk:icon="@drawable/ic_menu_friendslist"
+            cqumonk:color="@color/olive" 
+            cqumonk:text="@string/tab_contact"
+            cqumonk:text_size="12sp"
+            android:padding="5dp"/>
+        <cqu.cqumonk.androidcode.view.ChangeColorIcon
+            android:id="@+id/id_indicator_three"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            cqumonk:icon="@drawable/ic_menu_emoticons"
+            cqumonk:color="@color/olive" 
+            cqumonk:text="@string/tab_find"
+            cqumonk:text_size="12sp"
+            android:padding="5dp"/>
+        <cqu.cqumonk.androidcode.view.ChangeColorIcon
+            android:id="@+id/id_indicator_four"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            cqumonk:icon="@drawable/ic_menu_allfriends"
+            cqumonk:color="@color/olive" 
+            cqumonk:text="@string/tab_myself"
+            cqumonk:text_size="12sp"
+            android:padding="5dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

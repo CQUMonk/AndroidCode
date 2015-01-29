@@ -30,6 +30,12 @@
             android:name=".ui.QQslide_menu"
             android:label="@string/app_name" >
         </activity>
+        <activity
+            android:name=".ui.Weixin"
+            android:label="@string/weixin"
+            android:logo="@drawable/dekesite" 
+            android:screenOrientation="portrait">
+        </activity>
     </application>
 
 </manifest>

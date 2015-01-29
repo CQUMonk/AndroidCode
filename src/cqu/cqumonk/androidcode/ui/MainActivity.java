@@ -19,6 +19,8 @@ public class MainActivity extends Activity {
 	private Button mBtn_PassParams;
 	//类似QQ菜单侧边栏按钮
 	private Button mBtn_QQslideMenu;
+	//微信6.0菜单按钮
+	private Button mBtn_Weixin;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -55,6 +57,17 @@ public class MainActivity extends Activity {
 			@Override
 			public void onClick(View v) {
 				Intent intent=new Intent(MainActivity.this,QQslide_menu.class);
+				startActivity(intent);
+			}
+		});
+		
+		//weixin界面
+		mBtn_Weixin=(Button) findViewById(R.id.btn_weixin);
+		mBtn_Weixin.setOnClickListener(new View.OnClickListener() {
+			
+			@Override
+			public void onClick(View v) {
+				Intent intent= new Intent(MainActivity.this,Weixin.class);
 				startActivity(intent);
 			}
 		});
