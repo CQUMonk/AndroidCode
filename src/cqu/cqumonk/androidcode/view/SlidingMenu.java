@@ -78,6 +78,7 @@ public class SlidingMenu extends HorizontalScrollView {
 		// R.styleable.SlidingMenu是在values/attr.xml中定义好的
 		TypedArray typedArray = context.getTheme().obtainStyledAttributes(
 				attrs, R.styleable.SlidingMenu, defStyle, 0);
+		
 		for (int i = 0; i < typedArray.getIndexCount(); i++) {
 			int attr = typedArray.getIndex(i);
 			switch (attr) {

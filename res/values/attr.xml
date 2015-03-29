@@ -11,5 +11,7 @@
         <attr name="text" format="string"></attr>
         <attr name="text_size" format="dimension"></attr>
     </declare-styleable>
+    <!--小球 -->
+
 
 </resources>

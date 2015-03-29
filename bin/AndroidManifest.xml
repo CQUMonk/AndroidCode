@@ -36,6 +36,14 @@
             android:logo="@drawable/dekesite" 
             android:screenOrientation="portrait">
         </activity>
+        <activity
+            android:name=".ui.FollowFingerBall"
+            android:label="@string/app_name">
+        </activity>
+        <activity
+            android:name=".ui.Cal"
+            android:label="@string/app_name">
+        </activity>
     </application>
 
 </manifest>

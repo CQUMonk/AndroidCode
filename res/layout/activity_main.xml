@@ -1,27 +1,12 @@
-<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical" >
-
-    <Button
-        android:id="@+id/btn_passParams"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@drawable/word_button_icon"
-        android:text="页面间回传数据" />
-    <Button
-        android:id="@+id/btn_QQslideMenu"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@drawable/word_button_icon"
-        android:text="类似QQ侧边栏菜单" />
-    <Button
-        android:id="@+id/btn_weixin"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@drawable/word_button_icon"
-        android:text="微信6.0效果" />
+    <ListView 
+        android:id="@+id/lv_item"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
 
 
-</GridLayout>
+</LinearLayout>
