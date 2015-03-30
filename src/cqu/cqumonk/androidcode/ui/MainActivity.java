@@ -55,6 +55,8 @@ public class MainActivity extends Activity {
 		mDas.add(item4);
 		MyItem item5=new MyItem(R.drawable.img_5,"计算质数","演示新线程计算质数");
 		mDas.add(item5);
+		MyItem item6=new MyItem(R.drawable.img_1,"神经猫","模拟神经猫计算逻辑");
+		mDas.add(item6);
 		
 		mAdapter=new MyAdapter(this, mDas);
 		mListView.setAdapter(mAdapter);
@@ -98,6 +100,11 @@ public class MainActivity extends Activity {
 				case 4:
 					//新线程计算质数
 					intent=new Intent(MainActivity.this,Cal.class);
+					startActivity(intent);
+					break;
+				case 5:
+					//新线程计算质数
+					intent=new Intent(MainActivity.this,CreazyCat.class);
 					startActivity(intent);
 					break;
 

@@ -525,11 +525,12 @@ containing a value of this type.
         public static final int word_button_icon=0x7f02001a;
     }
     public static final class id {
-        public static final int action_addfriends=0x7f09001b;
-        public static final int action_feedback=0x7f09001c;
-        public static final int action_group_chat=0x7f090019;
-        public static final int action_scan=0x7f09001a;
-        public static final int action_search=0x7f090018;
+        public static final int action_addfriends=0x7f09001c;
+        public static final int action_feedback=0x7f09001d;
+        public static final int action_group_chat=0x7f09001a;
+        public static final int action_scan=0x7f09001b;
+        public static final int action_search=0x7f090019;
+        public static final int action_settings=0x7f090018;
         public static final int btn_returnParams=0x7f09000c;
         public static final int id_ball=0x7f090001;
         public static final int id_btnCal=0x7f090003;
@@ -567,7 +568,8 @@ containing a value of this type.
         public static final int weixin=0x7f030008;
     }
     public static final class menu {
-        public static final int weixin_menu=0x7f080000;
+        public static final int creazy_cat=0x7f080000;
+        public static final int weixin_menu=0x7f080001;
     }
     public static final class string {
         public static final int action_add=0x7f060008;
@@ -582,6 +584,7 @@ containing a value of this type.
         public static final int tab_contact=0x7f06000a;
         public static final int tab_find=0x7f06000b;
         public static final int tab_myself=0x7f06000c;
+        public static final int title_activity_creazy_cat=0x7f06000d;
         public static final int weixin=0x7f060003;
     }
     public static final class style {
