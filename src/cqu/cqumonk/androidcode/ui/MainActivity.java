@@ -57,6 +57,8 @@ public class MainActivity extends Activity {
 		mDas.add(item5);
 		MyItem item6=new MyItem(R.drawable.img_1,"神经猫","模拟神经猫计算逻辑");
 		mDas.add(item6);
+		MyItem item7=new MyItem(R.drawable.img_2,"扫一扫","二维码扫描");
+		mDas.add(item7);
 		
 		mAdapter=new MyAdapter(this, mDas);
 		mListView.setAdapter(mAdapter);
@@ -103,11 +105,13 @@ public class MainActivity extends Activity {
 					startActivity(intent);
 					break;
 				case 5:
-					//新线程计算质数
+					//神经猫
 					intent=new Intent(MainActivity.this,CreazyCat.class);
 					startActivity(intent);
 					break;
-
+				case 6:
+					intent =new  Intent(MainActivity.this,BarCode.class);
+					startActivity(intent);
 				}
 				
 			}

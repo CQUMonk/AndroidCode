@@ -7,6 +7,8 @@
     <uses-sdk
         android:minSdkVersion="17"
         android:targetSdkVersion="17" />
+    <uses-permission android:name="android.permission.CAMERA"/><uses-permission android:name="android.permission.VIBRATE" />
+    
 
     <application
         android:allowBackup="true"
@@ -47,6 +49,17 @@
         <activity
             android:name=".ui.CreazyCat"
             android:label="@string/title_activity_creazy_cat" >
+        </activity>
+        <activity
+            android:name=".ui.BarCode"
+            android:label="@string/title_activity_bar_code" >
+        </activity>
+        <activity
+            android:configChanges="orientation|keyboardHidden"
+            android:name="com.zxing.activity.CaptureActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:windowSoftInputMode="stateAlwaysHidden" >
         </activity>
     </application>
 

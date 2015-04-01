@@ -2,6 +2,7 @@ package cqu.cqumonk.androidcode.model;
 
 import java.util.Random;
 
+import android.util.Log;
 import cqu.cqumonk.androidcode.model.Dot.Status;
 import cqu.cqumonk.androidcode.utils.Utils;
 
@@ -111,7 +112,7 @@ public class DotMatrix {
 
 		dot=getNeiborDot(dot, direction);
 		while(dot!=null){
-			
+			//如果是障碍则返回负距离
 			if (dot.getStatus()==Status.ON) {
 				return -distance;
 			}
@@ -126,30 +127,32 @@ public class DotMatrix {
 	public int getMoveDirection(Dot dot){
 		//判断移动方向
 		boolean isTong=false;
+		boolean isWin=true;
+		//此时代表四周都是障碍
 		int moveDirection=1;
 		int minDistance=getDistance(dot, 1);
-		for(int i=2;i<7;i++){
-			int current=getDistance(dot, i);
-			if(minDistance>0){
-				isTong=true;
+		for(int i=1;i<7;i++){
+			int cur=getDistance(dot, i);
+			if (cur!=0) {
+				isWin=false;
 			}
-			if (isTong) {
-				if (current>0&&current<minDistance) {
-					minDistance=current;
-					moveDirection=i;
-				}
-			}else {
-				if(current>0){
-					isTong=true;
-					minDistance=current;
-					moveDirection=i;
-				}else {
-					if (current<minDistance) {
-						minDistance=current;
-						moveDirection=i;
-					}
-				}
+			
+			if (cur>0&&cur<minDistance) {
+				minDistance=cur;
+				moveDirection=i;
 			}
+			if (cur>0&&minDistance<=0) {
+				minDistance=cur;
+				moveDirection=i;
+			}
+			if (cur<minDistance&&minDistance<=0) {
+				minDistance=cur;
+				moveDirection=i;
+			}
+			
+		}
+		if (isWin) {
+			moveDirection=0;
 		}
 		return moveDirection;
 	}

@@ -15,5 +15,6 @@
     <string name="tab_find">发现</string>
     <string name="tab_myself">我</string>
     <string name="title_activity_creazy_cat">CreazyCat</string>
+    <string name="title_activity_bar_code">BarCode</string>
 
 </resources>

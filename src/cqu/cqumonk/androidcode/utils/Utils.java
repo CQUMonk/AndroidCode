@@ -8,7 +8,7 @@ public class Utils {
 
 	public final static int COL = 10;
 	public final static int ROW = 10;
-	public final static int BLOCK = 10;
+	public final static int BLOCK = 20;
 
 	public static boolean isEdge(Dot dot) {
 		if (dot == null) {

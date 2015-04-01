@@ -86,17 +86,24 @@ public class PlayGround extends SurfaceView{
 	 */
 	private void  escapeOneStep(Dot dot) {
 		if(Utils.isEdge(dot)){
-			lose();
+			lose();return ;
 		}else {
 			int dir=dotMatrix.getMoveDirection(dot);
+			if(dir==0){
+				win();
+				return;
+			}
 			//向该方向的那个邻居点移动
 			moveTo(dotMatrix.getNeiborDot(dot, dir));
 		}
 	}
 	//游戏失败
 	private void lose() {
-		// TODO Auto-generated method stub
 		Toast.makeText(getContext(), "you lose", Toast.LENGTH_SHORT).show();
+	}
+	//游戏胜利
+	private void win() {
+		Toast.makeText(getContext(), "you win", Toast.LENGTH_SHORT).show();
 	}
 	/**
 	 * 重新绘制界面
