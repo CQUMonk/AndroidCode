@@ -16,5 +16,8 @@
     <string name="tab_myself">我</string>
     <string name="title_activity_creazy_cat">CreazyCat</string>
     <string name="title_activity_bar_code">BarCode</string>
+    <string name="score">"Score: "</string>
+    <string name="newgame">"新游戏"</string>
+    <string name="bestscore">最好成绩：</string>
 
 </resources>

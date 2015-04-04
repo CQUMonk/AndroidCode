@@ -9,6 +9,7 @@ import android.graphics.Paint;
 import android.util.AttributeSet;
 import android.view.MotionEvent;
 import android.view.View;
+import android.widget.Toast;
 
 public class Ball extends View {
 	//小球当前位置，设置初始值
@@ -61,6 +62,7 @@ public class Ball extends View {
 		//获取到当前手指位置
 		mCurrentX=event.getX();
 		mCurrentY=event.getY();
+		Toast.makeText(getContext(), mCurrentX+":"+mCurrentY, Toast.LENGTH_SHORT).show();
 		
 		//告诉组件重绘自己
 		invalidate();

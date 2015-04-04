@@ -59,6 +59,9 @@ public class MainActivity extends Activity {
 		mDas.add(item6);
 		MyItem item7=new MyItem(R.drawable.img_2,"扫一扫","二维码扫描");
 		mDas.add(item7);
+		MyItem item8=new MyItem(R.drawable.img_3,"2048","2048游戏");
+		mDas.add(item8);
+		
 		
 		mAdapter=new MyAdapter(this, mDas);
 		mListView.setAdapter(mAdapter);
@@ -111,6 +114,9 @@ public class MainActivity extends Activity {
 					break;
 				case 6:
 					intent =new  Intent(MainActivity.this,BarCode.class);
+					startActivity(intent);
+				case 7:
+					intent =new  Intent(MainActivity.this,Game2048.class);
 					startActivity(intent);
 				}
 				

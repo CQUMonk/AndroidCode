@@ -61,6 +61,10 @@
             android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
             android:windowSoftInputMode="stateAlwaysHidden" >
         </activity>
+        <activity
+            android:name=".ui.Game2048"
+            android:label="2048" >
+        </activity>
     </application>
 
 </manifest>
