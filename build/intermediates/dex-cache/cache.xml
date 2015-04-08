@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="E:\AndroidWorkspace\AndroidCode\androidCode\build\intermediates\exploded-aar\AndroidCode\barCodeTest\unspecified\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="8bf6bcd5f5f22d02134defe6cda7cc00d73a2053">
+        <dex dex="E:\AndroidWorkspace\AndroidCode\androidCode\build\intermediates\pre-dexed\debug\classes-c1f947943020b6493504b80d2d9af955417cbc5d.jar" />
+    </item>
+    <item
+        jar="E:\AndroidWorkspace\AndroidCode\androidCode\libs\nineoldandroids-2.4.0.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="59f19e43354d32de831379c23ce03bb259a4c2b7">
+        <dex dex="E:\AndroidWorkspace\AndroidCode\androidCode\build\intermediates\pre-dexed\debug\nineoldandroids-2.4.0-99efe6aa301987257d913f14004ba0455018b018.jar" />
+    </item>
+    <item
+        jar="D:\Android\android-sdk\extras\android\m2repository\com\android\support\support-v4\18.0.0\support-v4-18.0.0.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="44ec51e9d395a47aab135e5e1b556c0007442156">
+        <dex dex="E:\AndroidWorkspace\AndroidCode\androidCode\build\intermediates\pre-dexed\debug\support-v4-18.0.0-099cbd6d114024195b193012e6d1c6258ad44672.jar" />
+    </item>
+    <item
+        jar="E:\AndroidWorkspace\AndroidCode\androidCode\build\intermediates\exploded-aar\AndroidCode\barCodeTest\unspecified\libs\zxing.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="e88c14e6e7daa0fa65172a62b54ee6a16ff4162d">
+        <dex dex="E:\AndroidWorkspace\AndroidCode\androidCode\build\intermediates\pre-dexed\debug\zxing-e16a7a920285cfe6ac8168a6d0facedfb2c2bae6.jar" />
+    </item>
+
+</items>

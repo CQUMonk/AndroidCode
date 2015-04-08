@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cqumonk="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <cqu.cqumonk.androidcode.QQSliding.SlidingMenu
+        android:id="@+id/id_menu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" 
+        cqumonk:menuRightPadding="100dp"
+        android:background="@drawable/img_frame_background">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" >
+
+            <include layout="@layout/left_menu" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" 
+                android:background="@drawable/qq">
+                <Button 
+                    android:onClick="toggleLeftMenu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="切换左菜单"/>
+                <Button 
+                    android:onClick="toggleRightMenu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="20dp"
+                    android:text="切换右菜单"/>
+            </RelativeLayout>
+            <include layout="@layout/right_menu"/>"
+        </LinearLayout>
+    </cqu.cqumonk.androidcode.QQSliding.SlidingMenu>
+
+</RelativeLayout>

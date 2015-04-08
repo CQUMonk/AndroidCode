@@ -1,0 +1,32 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="cqu.cqumonk.androidcode.Weixin" >
+<!-- showAsAction指定了action的显示位置，
+always表示永远显示在actionBar中；
+ifRoom表示如果屏幕空间够就显示在actionBar中，否则显示在overflow中；
+never表示永远显示在overflow中-->
+    <item
+        android:id="@+id/action_search"
+        android:actionViewClass="android.widget.SearchView"
+        android:icon="@drawable/actionbar_search_icon"
+        android:orderInCategory="100"
+        android:showAsAction="ifRoom|collapseActionView"
+        android:title="@string/action_search"/>
+    <item
+        android:id="@+id/action_group_chat"
+        android:icon="@drawable/menu_group_chat_icon"
+        android:title="@string/action_group_chat"/>
+    <item
+        android:id="@+id/action_scan"
+        android:icon="@drawable/men_scan_icon"
+        android:title="@string/action_scan"/>
+    <item
+        android:id="@+id/action_addfriends"
+        android:icon="@drawable/menu_add_icon"
+        android:title="@string/action_addfriends"/>
+    <item
+        android:id="@+id/action_feedback"
+        android:icon="@drawable/menu_feedback_icon"
+        android:title="@string/action_feedback"/>
+
+</menu><!-- From: file:/E:/AndroidWorkspace/AndroidCode/androidCode/src/main/res/menu/weixin_menu.xml -->
