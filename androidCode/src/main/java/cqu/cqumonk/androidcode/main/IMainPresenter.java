@@ -7,4 +7,6 @@ public interface IMainPresenter {
     public void onResume();
 
     public void onItemClicked(int position);
+
+    public void onItemDelete(int position);
 }

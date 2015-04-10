@@ -10,23 +10,19 @@ import android.view.View;
 import android.view.Window;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
-import android.widget.ListView;
 import android.widget.ProgressBar;
 
-import java.util.List;
-
 import cqu.cqumonk.androidcode.R;
-import cqu.cqumonk.androidcode.model.MyItem;
 
 public class MainActivity extends Activity implements IMainView
 {
 	
-	private ListView mListView;
+	private MainListView mListView;
     private ProgressBar mProgress;
 
     private IMainPresenter mainPresenter;
 
-	private MyAdapter mAdapter;
+
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -43,7 +39,7 @@ public class MainActivity extends Activity implements IMainView
 	 */
 	private void initView() {
 		
-		mListView=(ListView) findViewById(R.id.lv_mian_list);
+		mListView=(MainListView) findViewById(R.id.lv_mian_list);
         mProgress= (ProgressBar) findViewById(R.id.pb_main_progress);
 
         mainPresenter=new MainPresenterImpl(this,this);
@@ -52,6 +48,7 @@ public class MainActivity extends Activity implements IMainView
     }
 
 	private void initEvent(){
+        //点击item时候
 		mListView.setOnItemClickListener(new OnItemClickListener() {
 
 			
@@ -62,6 +59,14 @@ public class MainActivity extends Activity implements IMainView
 				
 			}
 		});
+        //触发删除事件
+        mListView.setOnDeleteListener(new OnDeleteListener() {
+            @Override
+            public void onDelete(int position) {
+                mainPresenter.onItemDelete(position);
+
+            }
+        });
 	}
 
 
@@ -76,15 +81,9 @@ public class MainActivity extends Activity implements IMainView
         mListView.setVisibility(View.VISIBLE);
         mProgress.setVisibility(View.INVISIBLE);
     }
-
     @Override
-    public void initDas(List<MyItem> items) {
-
-
-
-        mAdapter=new MyAdapter(this, items);
-        mListView.setAdapter(mAdapter);
-
+    public void setListViewAdapter(MyAdapter adapter){
+        mListView.setAdapter(adapter);
     }
 
     @Override
@@ -92,4 +91,6 @@ public class MainActivity extends Activity implements IMainView
         super.onResume();
         mainPresenter.onResume();
     }
+
+
 }

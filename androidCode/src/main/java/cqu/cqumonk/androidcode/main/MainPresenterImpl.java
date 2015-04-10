@@ -20,19 +20,22 @@ import cqu.cqumonk.androidcode.weixin.Weixin;
 public class MainPresenterImpl implements IMainPresenter,OnFinishedListener{
     private IMainView mMainView;
     private Context mContext;
+    private MyAdapter mAdapter;
 
     private IFindItemsInteractor findItemsInteractor;
+
     public MainPresenterImpl(IMainView view,Context context) {
         this.mMainView=view;
         this.mContext=context;
-        this.findItemsInteractor=new FindItemsInteractor();
+        mAdapter=new MyAdapter(context);
+        this.findItemsInteractor=new FindItemsInteractor(this);
     }
 
     @Override
     public void onResume() {
         this.mMainView.showProgress();
         //请求数据
-        this.findItemsInteractor.findItems(this);
+        this.findItemsInteractor.requestItems();
     }
 
     @Override
@@ -81,13 +84,24 @@ public class MainPresenterImpl implements IMainPresenter,OnFinishedListener{
         }
     }
 
+    @Override
+    public void onItemDelete(int position) {
+
+        findItemsInteractor.removeItem(position);
+
+    }
+
     /**
      * 数据请求完毕时被回调
      * @param items
      */
     @Override
     public void onDataPrepared(List<MyItem> items) {
-        mMainView.initDas(items);
+        //adapter获得到返回的数据
+        mAdapter.setMyItems(items);
+        //listView刷新
+        mMainView.setListViewAdapter(mAdapter);
         mMainView.hideProgress();
     }
+
 }

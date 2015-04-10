@@ -1,11 +1,5 @@
 package cqu.cqumonk.androidcode.main;
 
-import java.util.List;
-
-
-
-import cqu.cqumonk.androidcode.R;
-import cqu.cqumonk.androidcode.model.MyItem;
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -13,6 +7,11 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import java.util.List;
+
+import cqu.cqumonk.androidcode.R;
+import cqu.cqumonk.androidcode.model.MyItem;
 /**
  * 此adapter为主界面的listview提供数据适配
  * item中包括图片，标题，和内容
@@ -24,10 +23,13 @@ public class MyAdapter extends BaseAdapter {
 	private LayoutInflater mInflater;
 	private List<MyItem> myItems;
 
-	public MyAdapter(Context context,List<MyItem> myItems) {
+	public MyAdapter(Context context) {
 		mInflater=LayoutInflater.from(context);
-		this.myItems=myItems;
+
 	}
+    public void setMyItems(List<MyItem> items){
+        this.myItems=items;
+    }
 
 	@Override
 	public int getCount() {

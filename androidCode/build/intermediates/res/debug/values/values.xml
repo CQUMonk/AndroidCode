@@ -255,6 +255,7 @@
     <string name="app_name">AndroidCode</string>
     <string name="bestscore">最好成绩：</string>
     <string name="caculate_prime">计算所有质数</string>
+    <string name="delete">删除</string>
     <!-- From: file:/E:/AndroidWorkspace/AndroidCode/androidCode/build/intermediates/exploded-aar/AndroidCode/barCodeTest/unspecified/res/values/values.xml -->
     <eat-comment/>
     <string name="hello">Hello World, BarCodeTestActivity!</string>
