@@ -33,7 +33,7 @@ public class FindItemsInteractor implements IFindItemsInteractor{
         this.DataSource = new ArrayList<MyItem>();
         MyItem item1 = new MyItem(R.drawable.img_1, "QQ侧边栏", "QQ侧边栏菜单页面效果");
         this.DataSource.add(item1);
-        MyItem item2 = new MyItem(R.drawable.img_2, "QQ侧边栏", "QQ侧边栏菜单页面效果");
+        MyItem item2 = new MyItem(R.drawable.img_2, "断点续传组件", "断点续传多线程下载任务");
         this.DataSource.add(item2);
         MyItem item3 = new MyItem(R.drawable.img_3, "微信界面", "weixin界面效果");
         this.DataSource.add(item3);

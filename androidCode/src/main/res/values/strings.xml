@@ -28,5 +28,7 @@
     <string name="num_upper">输入数字上限</string>
     <string name="caculate_prime">计算所有质数</string>
     <string name="delete">删除</string>
+    <string name="title_activity_down_load">DownLoadActivity</string>
+    <string name="file_name">文件名：</string>
 
 </resources>

@@ -9,6 +9,7 @@ import cqu.cqumonk.androidcode.BarCode.BarCodeActivity;
 import cqu.cqumonk.androidcode.CreazyCat.CreazyCatActivity;
 import cqu.cqumonk.androidcode.Game2048.Game2048Activity;
 import cqu.cqumonk.androidcode.QQSliding.QQslideActivity;
+import cqu.cqumonk.androidcode.downLoadManager.DownLoadActivity;
 import cqu.cqumonk.androidcode.model.MyItem;
 import cqu.cqumonk.androidcode.prime.PrimeActivity;
 import cqu.cqumonk.androidcode.Ball.FollowFingerBall;
@@ -43,14 +44,15 @@ public class MainPresenterImpl implements IMainPresenter,OnFinishedListener{
         Intent intent;
         switch (position) {
             case 0:
+            //QQ侧边栏菜单页面跳转
                 intent=new Intent(mContext,QQslideActivity.class);
 
                 this.mContext.startActivity(intent);
                 break;
 
             case 1:
-                //QQ侧边栏菜单页面跳转
-                intent=new Intent(mContext,QQslideActivity.class);
+                //断点续传任务
+                intent=new Intent(mContext,DownLoadActivity.class);
                 this.mContext.startActivity(intent);
                 break;
             case 2:

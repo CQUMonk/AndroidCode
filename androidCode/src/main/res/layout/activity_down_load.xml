@@ -1,0 +1,39 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_download_filename"
+        android:text="@string/file_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:layout_alignParentTop="true"/>
+
+    <ProgressBar
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_download_filename"
+        android:id="@+id/pb_download_progress" />
+
+    <Button
+        android:id="@+id/btn_download_pause"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pb_download_progress"
+        android:layout_alignParentRight="true"
+        style="?android:attr/buttonStyleSmall"
+        android:text="暂停"/>
+    <Button
+        android:id="@+id/btn_download_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/btn_download_pause"
+        android:layout_below="@id/pb_download_progress"
+        style="?android:attr/buttonStyleSmall"
+        android:text="开始"/>
+
+
+</RelativeLayout>

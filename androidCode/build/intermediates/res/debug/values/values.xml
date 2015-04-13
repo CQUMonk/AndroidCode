@@ -256,6 +256,7 @@
     <string name="bestscore">最好成绩：</string>
     <string name="caculate_prime">计算所有质数</string>
     <string name="delete">删除</string>
+    <string name="file_name">文件名：</string>
     <!-- From: file:/E:/AndroidWorkspace/AndroidCode/androidCode/build/intermediates/exploded-aar/AndroidCode/barCodeTest/unspecified/res/values/values.xml -->
     <eat-comment/>
     <string name="hello">Hello World, BarCodeTestActivity!</string>
@@ -272,6 +273,7 @@
     <string name="tab_myself">我</string>
     <string name="title_activity_bar_code">BarCode</string>
     <string name="title_activity_creazy_cat">CreazyCat</string>
+    <string name="title_activity_down_load">DownLoadActivity</string>
     <string name="title_activity_login">loginActivity</string>
     <string name="user_name">用户名</string>
     <string name="user_name_error">用户名错误！</string>
