@@ -17,4 +17,19 @@
         <!-- All customizations that are NOT specific to a particular API-level can go here. -->
     </style>
 
+    <style name="tabs_bottom">
+        <item name="android:textSize">@dimen/bottom_tab_font_size</item>
+        <item name="android:textColor">@color/bottom_font</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:background">@color/bottom_gary</item>
+        <item name="android:paddingTop">@dimen/bottom_tab_padding_up</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:button">@null</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:drawablePadding">@dimen/bottom_tab_padding_drawable</item>
+        <item name="android:layout_weight">1.0</item>
+        <item name="android:layout_marginTop">1dp</item>
+    </style>
 </resources>

@@ -79,6 +79,9 @@
         <service android:name="cqu.cqumonk.androidcode.downLoadManager.DownLoadService" />
 
         <activity
+            android:name="cqu.cqumonk.androidcode.tabs.TabsActivity"
+            android:label="TabsActivity" />
+        <activity
             android:name="com.ericssonlabs.BarCodeTestActivity"
             android:label="@string/app_name" >
             <intent-filter>

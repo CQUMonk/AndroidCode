@@ -9,62 +9,62 @@ package com.ericssonlabs;
 public final class R {
 	public static final class color {
 		public static final int bg_color = 0x7f050006;
-		public static final int contents_text = 0x7f050011;
-		public static final int encode_view = 0x7f05002f;
-		public static final int grgray = 0x7f05003c;
-		public static final int header = 0x7f05003d;
-		public static final int help_button_view = 0x7f05003e;
-		public static final int help_view = 0x7f05003f;
-		public static final int possible_result_points = 0x7f05007c;
-		public static final int result_image_border = 0x7f050080;
-		public static final int result_minor_text = 0x7f050081;
-		public static final int result_points = 0x7f050082;
-		public static final int result_text = 0x7f050083;
-		public static final int result_view = 0x7f050084;
-		public static final int sbc_header_text = 0x7f05008a;
-		public static final int sbc_header_view = 0x7f05008b;
-		public static final int sbc_layout_view = 0x7f05008c;
-		public static final int sbc_list_item = 0x7f05008d;
-		public static final int sbc_page_number_text = 0x7f05008e;
-		public static final int sbc_snippet_text = 0x7f05008f;
-		public static final int share_text = 0x7f050092;
-		public static final int share_view = 0x7f050093;
-		public static final int status_text = 0x7f05009c;
-		public static final int status_view = 0x7f05009d;
-		public static final int transparent = 0x7f0500a3;
-		public static final int viewfinder_frame = 0x7f0500a5;
-		public static final int viewfinder_laser = 0x7f0500a6;
-		public static final int viewfinder_mask = 0x7f0500a7;
+		public static final int contents_text = 0x7f050013;
+		public static final int encode_view = 0x7f050031;
+		public static final int grgray = 0x7f05003e;
+		public static final int header = 0x7f05003f;
+		public static final int help_button_view = 0x7f050040;
+		public static final int help_view = 0x7f050041;
+		public static final int possible_result_points = 0x7f05007e;
+		public static final int result_image_border = 0x7f050082;
+		public static final int result_minor_text = 0x7f050083;
+		public static final int result_points = 0x7f050084;
+		public static final int result_text = 0x7f050085;
+		public static final int result_view = 0x7f050086;
+		public static final int sbc_header_text = 0x7f05008c;
+		public static final int sbc_header_view = 0x7f05008d;
+		public static final int sbc_layout_view = 0x7f05008e;
+		public static final int sbc_list_item = 0x7f05008f;
+		public static final int sbc_page_number_text = 0x7f050090;
+		public static final int sbc_snippet_text = 0x7f050091;
+		public static final int share_text = 0x7f050094;
+		public static final int share_view = 0x7f050095;
+		public static final int status_text = 0x7f05009e;
+		public static final int status_view = 0x7f05009f;
+		public static final int transparent = 0x7f0500a5;
+		public static final int viewfinder_frame = 0x7f0500a7;
+		public static final int viewfinder_laser = 0x7f0500a8;
+		public static final int viewfinder_mask = 0x7f0500a9;
 	}
 	public static final class drawable {
-		public static final int ic_launcher = 0x7f020008;
-		public static final int navbar = 0x7f020017;
+		public static final int ic_launcher = 0x7f020009;
+		public static final int navbar = 0x7f020021;
 	}
 	public static final class id {
 		public static final int auto_focus = 0x7f070000;
-		public static final int btn_add_qrcode = 0x7f070037;
-		public static final int btn_cancel_scan = 0x7f07002a;
-		public static final int btn_scan_barcode = 0x7f070034;
+		public static final int btn_add_qrcode = 0x7f07003b;
+		public static final int btn_cancel_scan = 0x7f07002b;
+		public static final int btn_scan_barcode = 0x7f070038;
 		public static final int decode = 0x7f070001;
 		public static final int decode_failed = 0x7f070002;
 		public static final int decode_succeeded = 0x7f070003;
 		public static final int encode_failed = 0x7f070004;
 		public static final int encode_succeeded = 0x7f070005;
-		public static final int et_qr_string = 0x7f070036;
-		public static final int iv_qr_image = 0x7f070038;
+		public static final int et_qr_string = 0x7f07003a;
+		public static final int iv_qr_image = 0x7f07003c;
 		public static final int launch_product_query = 0x7f070006;
-		public static final int preview_view = 0x7f070028;
+		public static final int preview_view = 0x7f070029;
 		public static final int quit = 0x7f070007;
 		public static final int restart_preview = 0x7f070008;
 		public static final int return_scan_result = 0x7f070009;
 		public static final int search_book_contents_failed = 0x7f07000a;
 		public static final int search_book_contents_succeeded = 0x7f07000b;
-		public static final int tv_scan_result = 0x7f070035;
-		public static final int viewfinder_view = 0x7f070029;
+		public static final int tv_scan_result = 0x7f070039;
+		public static final int viewfinder_view = 0x7f07002a;
 	}
 	public static final class layout {
-		public static final int camera = 0x7f030007;
-		public static final int main = 0x7f03000b;
+		public static final int camera = 0x7f030008;
+		public static final int main = 0x7f030011;
 	}
 	public static final class raw {
 		public static final int beep = 0x7f040000;

@@ -135,15 +135,21 @@ ADDED from AndroidManifest.xml:69:9
 	android:name
 		ADDED from AndroidManifest.xml:70:13
 activity#cqu.cqumonk.androidcode.downLoadManager.DownLoadActivity
-ADDED from AndroidManifest.xml:73:9
+ADDED from AndroidManifest.xml:74:9
 	android:label
+		ADDED from AndroidManifest.xml:76:13
+	android:name
 		ADDED from AndroidManifest.xml:75:13
-	android:name
-		ADDED from AndroidManifest.xml:74:13
 service#cqu.cqumonk.androidcode.downLoadManager.DownLoadService
-ADDED from AndroidManifest.xml:77:9
+ADDED from AndroidManifest.xml:78:9
 	android:name
-		ADDED from AndroidManifest.xml:77:18
+		ADDED from AndroidManifest.xml:78:18
+activity#cqu.cqumonk.androidcode.tabs.TabsActivity
+ADDED from AndroidManifest.xml:80:9
+	android:label
+		ADDED from AndroidManifest.xml:81:13
+	android:name
+		ADDED from AndroidManifest.xml:80:19
 uses-feature#android.hardware.camera
 ADDED from AndroidCode:barCodeTest:unspecified:14:5
 	android:name

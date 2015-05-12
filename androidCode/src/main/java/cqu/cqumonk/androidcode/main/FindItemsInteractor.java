@@ -47,6 +47,8 @@ public class FindItemsInteractor implements IFindItemsInteractor{
         this.DataSource.add(item7);
         MyItem item8 = new MyItem(R.drawable.img_3, "2048", "2048游戏");
         this.DataSource.add(item8);
+        MyItem item9 = new MyItem(R.drawable.img_4, "tabs", "tabsTest");
+        this.DataSource.add(item9);
 
     }
     @Override

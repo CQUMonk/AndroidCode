@@ -13,6 +13,7 @@ import cqu.cqumonk.androidcode.downLoadManager.DownLoadActivity;
 import cqu.cqumonk.androidcode.model.MyItem;
 import cqu.cqumonk.androidcode.prime.PrimeActivity;
 import cqu.cqumonk.androidcode.Ball.FollowFingerBall;
+import cqu.cqumonk.androidcode.tabs.TabsActivity;
 import cqu.cqumonk.androidcode.weixin.Weixin;
 
 /**
@@ -81,6 +82,10 @@ public class MainPresenterImpl implements IMainPresenter,OnFinishedListener{
                 break;
             case 7:
                 intent =new  Intent(mContext,Game2048Activity.class);
+                this.mContext.startActivity(intent);
+                break;
+            case 8:
+                intent =new  Intent(mContext,TabsActivity.class);
                 this.mContext.startActivity(intent);
                 break;
         }

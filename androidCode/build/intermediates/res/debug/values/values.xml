@@ -21,6 +21,8 @@
     <color name="blanchedalmond">#FFEBCD</color>
     <color name="blue">#0000FF</color>
     <color name="blueviolet">#8A2BE2</color>
+    <color name="bottom_font">#7a7e83</color>
+    <color name="bottom_gary">#f1f2f4</color>
     <color name="brown">#A52A2A</color>
     <color name="burlywood">#DEB887</color>
     <color name="cadetblue">#5F9EA0</color>
@@ -229,6 +231,9 @@
     <eat-comment/>
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="bottom_tab_font_size">10dp</dimen>
+    <dimen name="bottom_tab_padding_drawable">2dp</dimen>
+    <dimen name="bottom_tab_padding_up">5dp</dimen>
     <!-- From: file:/E:/AndroidWorkspace/AndroidCode/androidCode/build/intermediates/exploded-aar/AndroidCode/barCodeTest/unspecified/res/values/values.xml -->
     <eat-comment/>
     <item name="auto_focus" type="id"/>
@@ -290,5 +295,20 @@
     </style>
     <style name="AppTheme" parent="AppBaseTheme">
         <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+    <style name="tabs_bottom">
+        <item name="android:textSize">@dimen/bottom_tab_font_size</item>
+        <item name="android:textColor">@color/bottom_font</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:background">@color/bottom_gary</item>
+        <item name="android:paddingTop">@dimen/bottom_tab_padding_up</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:button">@null</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:drawablePadding">@dimen/bottom_tab_padding_drawable</item>
+        <item name="android:layout_weight">1.0</item>
+        <item name="android:layout_marginTop">1dp</item>
     </style>
 </resources>

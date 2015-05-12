@@ -69,12 +69,17 @@
         <activity
             android:name=".login.loginActivity"
             android:label="@string/title_activity_login" >
+
         </activity>
         <activity
             android:name=".downLoadManager.DownLoadActivity"
             android:label="@string/title_activity_down_load" >
         </activity>
         <service android:name=".downLoadManager.DownLoadService"/>
+
+        <activity android:name=".tabs.TabsActivity"
+            android:label="TabsActivity"/>
+
     </application>
 
 </manifest>
